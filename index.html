@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string=prompt("enter a string")
+let vowelcount=0
+let consonentcount=0
+for(i=string.length-1;i>=0;i--){ 
+  
+if(string[i]=="a" ||string[i]=="e" ||string[i]=="i" ||string[i]=="o" ||string[i]=="u" || string[i]=="A" ||string[i]=="E" ||string[i]=="I" ||string[i]=="O" ||string[i]=="U")
+// if(string[i]==["a"||"e"||"i"||"o"||"u"||"A"||"E"||"I"||"O"||"U"])
+{
+    vowelcount++
+    console.log(string[i]+" is vowel")
+}
+// else if (/[a-zA-Z]/.test(string[i])) {  
+//     consonentcount++
+//       console.log(string[i]+" is consonent");
+//     }
+else{
+    consonentcount++
+    console.log(string[i]+" is consonent")
+}
+
+}
+console.log(vowelcount)
+console.log(consonentcount)
+
+    </script>
+</body>
+</html>
